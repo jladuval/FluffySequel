@@ -13,9 +13,9 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
-        'USER': 'postgres',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
+        'NAME': 'FluffyDb',                      # Or path to database file if using sqlite3.
+        'USER': 'jacob',                      # Not used with sqlite3.
+        'PASSWORD': 'rabbit',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -68,6 +68,8 @@ STATIC_URL = '/static/'
 # Additional locations of static files
 SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
 
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+
 STATICFILES_DIRS = (
     os.path.join(SITE_ROOT, 'static'),
     )
@@ -119,6 +121,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'Home'
 )
 
 # A sample logging configuration. The only tangible logging

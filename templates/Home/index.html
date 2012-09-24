@@ -1,0 +1,12 @@
+{% extends 'Shared/base.html' %}
+{% block body %}
+
+    <h1>Fluffy Link</h1>
+
+    <form action="/index/" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" />
+    </form>
+
+{% endblock %}
