@@ -1,7 +1,9 @@
 {% extends 'Shared/base.html' %}
 {% block body %}
 
-    <h1>Fluffy Link</h1>
+    <div class="logoWrapper">
+        <img id="fluffyLogo" src = "{{ STATIC_URL }}img\Logo.png" alt = "Fluffy Link"/>
+    </div>
 
     <form action="/index/" method="post">
         {% csrf_token %}

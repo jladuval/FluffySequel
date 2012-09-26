@@ -296,3 +296,10 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+/*Fluffy styles*/
+
+body{
+    background: url("../img/shattered.png");
+}
